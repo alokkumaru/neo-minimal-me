@@ -10,18 +10,15 @@ import Blog from "./pages/Blog";
 import Projects from "./pages/Projects";
 import CV from "./pages/CV";
 import NotFound from "./pages/NotFound";
-
 const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+const App = () => <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navigation />
+        <Navigation className="py-[15px]" />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} className="py-[15px]" />
           <Route path="/socials" element={<Socials />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/projects" element={<Projects />} />
@@ -31,7 +28,5 @@ const App = () => (
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
-  </QueryClientProvider>
-);
-
+  </QueryClientProvider>;
 export default App;
