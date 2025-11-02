@@ -1,5 +1,6 @@
-import { Calendar, Clock, ArrowRight, Newspaper } from "lucide-react";
+import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import blogIcon from "@/assets/blog-icon.png";
 
 const Blog = () => {
   const posts = [
@@ -32,7 +33,7 @@ const Blog = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
             Blog
-            <Newspaper className="w-16 h-16 md:w-20 md:h-20" strokeWidth={3} />
+            <img src={blogIcon} alt="Blog" className="w-16 h-16 md:w-20 md:h-20" />
           </h1>
           <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
             Things I think about
