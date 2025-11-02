@@ -32,7 +32,7 @@ const Blog = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6">Blog</h1>
           <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Thoughts, tutorials, and insights about web development and design.
+            Things I think about
           </p>
         </div>
 
