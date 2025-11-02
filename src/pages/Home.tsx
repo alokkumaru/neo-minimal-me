@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import xLogo from "@/assets/x-logo.png";
+import xLogo from "@/assets/x-logo.svg";
 const Home = () => {
   return <div className="min-h-screen pt-6 md:pt-8 pb-16 md:pb-20 px-5 md:px-6">
       <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-6 md:p-8">
