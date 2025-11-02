@@ -54,11 +54,11 @@ const Socials = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6">
+    <div className="min-h-screen pt-16 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6">Let's Connect</h1>
-          <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6">Let's Connect</h1>
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
             Find me on these platforms. I'm always happy to chat!
           </p>
         </div>
@@ -99,14 +99,14 @@ const Socials = () => {
         </div>
 
         {/* Contact CTA */}
-        <div className="mt-16 bg-card border-neo border-foreground shadow-neo-lg p-12 rounded text-center">
-          <h2 className="text-4xl font-bold mb-4">Prefer Direct Contact?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
+        <div className="mt-12 md:mt-16 bg-card border-neo border-foreground shadow-neo-lg p-6 md:p-12 rounded text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Prefer Direct Contact?</h2>
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
             Send me an email and I'll get back to you as soon as possible.
           </p>
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="text-sm md:text-base">
             <a href="mailto:your.email@example.com">
-              <Mail className="w-5 h-5" />
+              <Mail className="w-4 h-4 md:w-5 md:h-5" />
               Send Email
             </a>
           </Button>

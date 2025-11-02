@@ -7,35 +7,35 @@ const BlogPost = () => {
   // Quick Commerce 2025 post
   if (slug === "quick-commerce-2025") {
     return (
-      <div className="min-h-screen pt-32 pb-20 px-6">
+      <div className="min-h-screen pt-16 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
         <article className="max-w-4xl mx-auto">
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity"
+            className="inline-flex items-center gap-2 mb-6 md:mb-8 hover:opacity-70 transition-opacity text-sm md:text-base"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-3 h-3 md:w-4 md:h-4" />
             Back to Blog
           </Link>
 
-          <header className="mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <header className="mb-8 md:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               Quick commerce update 2025
             </h1>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Calendar className="w-5 h-5" />
+            <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
+              <Calendar className="w-4 h-4 md:w-5 md:h-5" />
               <time dateTime="2025-01-05">Jan 5, 2025</time>
             </div>
           </header>
 
-          <div className="prose prose-lg max-w-none">
-            <div className="bg-card border-neo border-foreground shadow-neo p-6 rounded my-8">
-              <p className="text-xl font-bold mb-0">
+          <div className="prose prose-sm md:prose-lg max-w-none">
+            <div className="bg-card border-neo border-foreground shadow-neo p-4 md:p-6 rounded my-6 md:my-8">
+              <p className="text-base md:text-xl font-bold mb-0">
                 $6Bn in 2025, growing at &gt;70% CAGR. Quick comm is cannibalizing ecomm market in India (growing 5X faster)
               </p>
             </div>
 
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Growth Drivers</h2>
+            <section className="mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 bg-foreground text-background inline-block px-3 md:px-4 py-1.5 md:py-2">Growth Drivers</h2>
               <p className="mb-4">Quick commerce is growing on the back of three key factors:</p>
               
               <div className="space-y-6">
@@ -135,22 +135,22 @@ const BlogPost = () => {
   // Corporate Hegemony post
   if (slug === "corporate-hegemony") {
     return (
-      <div className="min-h-screen pt-32 pb-20 px-6">
+      <div className="min-h-screen pt-16 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
         <article className="max-w-4xl mx-auto">
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity"
+            className="inline-flex items-center gap-2 mb-6 md:mb-8 hover:opacity-70 transition-opacity text-sm md:text-base"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-3 h-3 md:w-4 md:h-4" />
             Back to Blog
           </Link>
 
-          <header className="mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <header className="mb-8 md:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
               The Rise of Corporate Hegemony
             </h1>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Calendar className="w-5 h-5" />
+            <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
+              <Calendar className="w-4 h-4 md:w-5 md:h-5" />
               <time dateTime="2025-01-10">Jan 10, 2025</time>
             </div>
           </header>
@@ -245,22 +245,22 @@ const BlogPost = () => {
   }
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6">
+    <div className="min-h-screen pt-16 md:pt-32 pb-12 md:pb-20 px-4 md:px-6">
       <article className="max-w-4xl mx-auto">
         <Link
           to="/blog"
-          className="inline-flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity"
+          className="inline-flex items-center gap-2 mb-6 md:mb-8 hover:opacity-70 transition-opacity text-sm md:text-base"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-3 h-3 md:w-4 md:h-4" />
           Back to Blog
         </Link>
 
-        <header className="mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        <header className="mb-8 md:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
             Storage is the invisible opportunity in AI infra
           </h1>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <Calendar className="w-5 h-5" />
+          <div className="flex items-center gap-2 text-muted-foreground text-sm md:text-base">
+            <Calendar className="w-4 h-4 md:w-5 md:h-5" />
             <time dateTime="2025-01-15">Jan 15, 2025</time>
           </div>
         </header>
