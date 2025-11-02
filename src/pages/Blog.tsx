@@ -8,7 +8,7 @@ const Blog = () => {
       id: "quick-commerce-2025",
       title: "Quick commerce update 2025",
       excerpt: "$6Bn in 2025, growing at >70% CAGR. Quick comm is cannibalizing ecomm market in India (growing 5X faster).",
-      date: "2025-01-05",
+      date: "2025-09-15",
       slug: "quick-commerce-2025",
     },
     {
