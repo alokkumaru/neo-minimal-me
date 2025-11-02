@@ -68,7 +68,7 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-8">
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
             My Work
@@ -84,8 +84,8 @@ const Projects = () => {
           <p className="text-xl text-muted-foreground">
             Project showcase coming soon!
           </p>
-        </div>
       </div>
+    </div>
     </div>
   );
 };
