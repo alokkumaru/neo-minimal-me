@@ -5,6 +5,13 @@ import Navigation from "@/components/Navigation";
 const Blog = () => {
   const posts = [
     {
+      id: "storage-ai-infra",
+      title: "Storage is the invisible opportunity in AI infra",
+      excerpt: "AI workload is driving the necessity for cloud storage services, with cloud storage growing at ~20% CAGR.",
+      date: "2025-09-30",
+      slug: "storage-ai-infra",
+    },
+    {
       id: "quick-commerce-2025",
       title: "Quick commerce update 2025",
       excerpt: "$6Bn in 2025, growing at >70% CAGR. Quick comm is cannibalizing ecomm market in India (growing 5X faster).",
@@ -17,13 +24,6 @@ const Blog = () => {
       excerpt: "Tracing how corporations came to dominate the global economic and political landscape.",
       date: "2025-01-10",
       slug: "corporate-hegemony",
-    },
-    {
-      id: "storage-ai-infra",
-      title: "Storage is the invisible opportunity in AI infra",
-      excerpt: "AI workload is driving the necessity for cloud storage services, with cloud storage growing at ~20% CAGR.",
-      date: "2025-09-30",
-      slug: "storage-ai-infra",
     },
   ];
 
