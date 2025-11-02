@@ -12,9 +12,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="mb-12 border-neo border-foreground shadow-neo-lg px-4 py-3 rounded" style={{ backgroundColor: '#FEE440' }}>
+    <nav className="mb-12 border-neo border-foreground shadow-neo-lg px-4 py-3 rounded relative" style={{ backgroundColor: '#FEE440' }}>
       <div className="flex items-center justify-between">
-        <img src={logo} alt="Logo" className="h-8" />
+        <img src={logo} alt="Logo" className="h-16 -my-6 -ml-4" />
         <ul className="flex gap-6">
         {links.map((link) => {
           const isActive = location.pathname === link.to;
