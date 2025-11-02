@@ -11,8 +11,8 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-1/2 -translate-x-1/2 z-50 bg-card border-neo border-foreground shadow-neo-lg px-4 py-3 rounded">
-      <ul className="flex gap-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card border-neo border-foreground shadow-neo-lg px-4 py-3 mx-auto max-w-7xl rounded">
+      <ul className="flex gap-6 justify-end">
         {links.map((link) => {
           const isActive = location.pathname === link.to;
           
@@ -22,8 +22,8 @@ const Navigation = () => {
                 to={link.to}
                 className={`px-4 py-2 rounded font-bold transition-all ${
                   isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-background hover:opacity-70"
+                    ? "text-primary"
+                    : "hover:opacity-70"
                 }`}
               >
                 {link.label}
