@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const posts = [
     {
+      id: "quick-commerce-2025",
+      title: "Quick commerce update 2025",
+      excerpt: "$6Bn in 2025, growing at >70% CAGR. Quick comm is cannibalizing ecomm market in India (growing 5X faster).",
+      date: "2025-01-05",
+      slug: "quick-commerce-2025",
+    },
+    {
       id: "corporate-hegemony",
       title: "The Rise of Corporate Hegemony",
       excerpt: "Tracing how corporations came to dominate the global economic and political landscape.",

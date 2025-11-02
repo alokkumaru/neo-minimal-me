@@ -4,6 +4,134 @@ import { Link, useParams } from "react-router-dom";
 const BlogPost = () => {
   const { slug } = useParams();
 
+  // Quick Commerce 2025 post
+  if (slug === "quick-commerce-2025") {
+    return (
+      <div className="min-h-screen pt-32 pb-20 px-6">
+        <article className="max-w-4xl mx-auto">
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Blog
+          </Link>
+
+          <header className="mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              Quick commerce update 2025
+            </h1>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Calendar className="w-5 h-5" />
+              <time dateTime="2025-01-05">Jan 5, 2025</time>
+            </div>
+          </header>
+
+          <div className="prose prose-lg max-w-none">
+            <div className="bg-card border-neo border-foreground shadow-neo p-6 rounded my-8">
+              <p className="text-xl font-bold mb-0">
+                $6Bn in 2025, growing at &gt;70% CAGR. Quick comm is cannibalizing ecomm market in India (growing 5X faster)
+              </p>
+            </div>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Growth Drivers</h2>
+              <p className="mb-4">Quick commerce is growing on the back of three key factors:</p>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Growing Adoption</h3>
+                  <ul className="space-y-2 list-disc pl-6">
+                    <li>Demand for convenience</li>
+                    <li>Increasing incomes</li>
+                    <li>Higher concentrations in key micro-markets</li>
+                    <li>Increasing assortments</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Increasing Competitive Intensity</h3>
+                  <ul className="space-y-2 list-disc pl-6">
+                    <li>Maturing players improving business models to prove sustainability</li>
+                    <li>More Ecomm players entering the market</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Supply Growth</h3>
+                  <ul className="space-y-2 list-disc pl-6">
+                    <li>D2C brands increasing investments on QComm</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Verticalization of Ecomm</h2>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Demand Factors</h3>
+                  <ul className="space-y-2 list-disc pl-6">
+                    <li>Need for immediacy is riding across verticals</li>
+                    <li>Horizontal qcomm players optimize for speed and are limited to SKUs that are fast moving</li>
+                    <li>Speed is getting commoditized with more players entering the market, competitive advantage shifting toward platforms that offer radical differentiation</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-bold mb-3">Supply Factors</h3>
+                  <ul className="space-y-2 list-disc pl-6">
+                    <li>Difficult for brands to list on horizontal qcomm which has more impetus on other categories</li>
+                    <li>Brands can offer more extensive catalog and have better relevance on Vertical QComm</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Vertical QComm Models</h2>
+              
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4">Three Types of Models</h3>
+                <ul className="space-y-2 list-disc pl-6">
+                  <li><strong>Partner Model:</strong> Direct collaboration with existing stores</li>
+                  <li><strong>Hybrid Model:</strong> Mix of both the models</li>
+                  <li><strong>Darkstore Model:</strong> Dedicated micro warehouses</li>
+                </ul>
+              </div>
+
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold mb-4">Value Propositions</h3>
+                <ul className="space-y-2 list-disc pl-6">
+                  <li>Address Fashion's Return to Origin problem using "Try before buying"</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-4">Sustainability</h3>
+                <ul className="space-y-2 list-disc pl-6">
+                  <li>Margins in Horizontal Qcomm are tight because of competitive intensity</li>
+                  <li>Vertical Qcomm, by virtue of higher AOV and margins, offers better path to profitability</li>
+                  <li>Can have lower RTO than ecomm players (40-50% vs 15-20%) - enhances gross margins, lowers reverse logistics costs</li>
+                </ul>
+              </div>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Challenges</h2>
+              <ul className="space-y-3 list-disc pl-6">
+                <li>Need to build customer confidence on genuity</li>
+                <li>Smaller markets</li>
+                <li>Naturally lower repeat rates</li>
+              </ul>
+            </section>
+          </div>
+        </article>
+      </div>
+    );
+  }
+
   // Corporate Hegemony post
   if (slug === "corporate-hegemony") {
     return (
