@@ -2,23 +2,29 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { ContactDialog } from "./ContactDialog";
 
 const Navigation = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   
   const links = [
     { to: "#home", label: "Home" },
     { to: "#blog", label: "Blog" },
     { to: "#projects", label: "Projects" },
     { to: "#journey", label: "Journey" },
-    { to: "#contact", label: "Get in Touch" },
+    { to: "contact", label: "Get in Touch" },
   ];
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (sectionId === "contact") {
+      setIsContactOpen(true);
+    } else {
+      const element = document.querySelector(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
     setIsMenuOpen(false);
   };
@@ -79,6 +85,8 @@ const Navigation = () => {
           </ul>
         </div>
       )}
+      
+      <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </nav>
   );
 };
