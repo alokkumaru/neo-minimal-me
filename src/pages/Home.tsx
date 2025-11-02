@@ -12,19 +12,19 @@ const Home = () => {
             <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild>
                 <a href="mailto:your.email@example.com">
-                  <Mail className="w-5 h-5" />
+                  <Mail className="w-5 h-5 text-black" />
                   Email Me
                 </a>
               </Button>
               <Button variant="secondary" size="lg" asChild>
                 <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-5 h-5" />
+                  <Github className="w-5 h-5 text-black" />
                   GitHub
                 </a>
               </Button>
               <Button variant="accent" size="lg" asChild>
                 <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 text-black" />
                   LinkedIn
                 </a>
               </Button>
