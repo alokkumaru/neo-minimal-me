@@ -22,7 +22,7 @@ const Blog = () => {
       id: "storage-ai-infra",
       title: "Storage is the invisible opportunity in AI infra",
       excerpt: "AI workload is driving the necessity for cloud storage services, with cloud storage growing at ~20% CAGR.",
-      date: "2025-01-15",
+      date: "2025-09-30",
       slug: "storage-ai-infra",
     },
   ];
