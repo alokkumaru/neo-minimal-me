@@ -1,6 +1,5 @@
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import blogIcon from "@/assets/blog-icon.png";
 import Navigation from "@/components/Navigation";
 
 const Blog = () => {
@@ -35,7 +34,7 @@ const Blog = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
             Blog
-            <img src={blogIcon} alt="Blog" className="w-16 h-16 md:w-20 md:h-20" />
+            <span className="text-6xl md:text-7xl">✍</span>
           </h1>
           <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
             Things I think about
