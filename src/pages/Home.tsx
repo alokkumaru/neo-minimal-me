@@ -8,7 +8,27 @@ const Home = () => {
         <section className="mb-20">
           <div className="border-neo border-foreground shadow-neo-lg p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-primary-foreground">Hi, I'm Alok</h1>
-            <p className="text-2xl md:text-3xl text-primary-foreground/90 font-bold">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
+            <p className="text-2xl md:text-3xl text-primary-foreground/90 font-bold mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
+            <div className="flex flex-wrap gap-4">
+              <Button size="lg" asChild>
+                <a href="mailto:your.email@example.com">
+                  <Mail className="w-5 h-5" />
+                  Email Me
+                </a>
+              </Button>
+              <Button variant="secondary" size="lg" asChild>
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-5 h-5" />
+                  GitHub
+                </a>
+              </Button>
+              <Button variant="accent" size="lg" asChild>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-5 h-5" />
+                  LinkedIn
+                </a>
+              </Button>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -71,29 +91,9 @@ const Home = () => {
         {/* CTA Section */}
         <section className="bg-card border-neo border-foreground shadow-neo-lg p-12 rounded text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
-          <p className="text-xl mb-8 text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" asChild>
-              <a href="mailto:your.email@example.com">
-                <Mail className="w-5 h-5" />
-                Email Me
-              </a>
-            </Button>
-            <Button variant="secondary" size="lg" asChild>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                <Github className="w-5 h-5" />
-                GitHub
-              </a>
-            </Button>
-            <Button variant="accent" size="lg" asChild>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-5 h-5" />
-                LinkedIn
-              </a>
-            </Button>
-          </div>
         </section>
       </div>
     </div>;
