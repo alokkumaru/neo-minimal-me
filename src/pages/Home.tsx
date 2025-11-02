@@ -1,20 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen pt-32 pb-20 px-6">
+  return <div className="min-h-screen pt-32 pb-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
         <section className="mb-20">
-          <div className="bg-primary border-neo border-foreground shadow-neo-lg p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all">
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-primary-foreground">
-              Hi, I'm Your Name
-            </h1>
-            <p className="text-2xl md:text-3xl text-primary-foreground/90 font-bold">
-              A creative developer building digital experiences
-            </p>
+          <div className="border-neo border-foreground shadow-neo-lg p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50">
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-primary-foreground">Hi, I'm Alok</h1>
+            <p className="text-2xl md:text-3xl text-primary-foreground/90 font-bold">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -102,8 +96,6 @@ const Home = () => {
           </div>
         </section>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
