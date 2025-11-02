@@ -71,7 +71,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6">My Work</h1>
           <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
-            A collection of projects I've worked on. Each one taught me something new.
+            Things I've built (selective)
           </p>
         </div>
 
