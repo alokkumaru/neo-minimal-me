@@ -2,22 +2,29 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { ContactDialog } from "./ContactDialog";
 
 const Navigation = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   
   const links = [
     { to: "#home", label: "Home" },
     { to: "#blog", label: "Blog" },
     { to: "#projects", label: "Projects" },
     { to: "#journey", label: "Journey" },
+    { to: "contact", label: "Get in Touch" },
   ];
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (sectionId === "contact") {
+      setIsContactOpen(true);
+    } else {
+      const element = document.querySelector(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
     setIsMenuOpen(false);
   };
@@ -39,7 +46,7 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(link.to);
                 }}
-                className="px-2 sm:px-3 md:px-4 py-1.5 md:py-2 rounded font-bold text-sm md:text-base transition-all hover:opacity-70 cursor-pointer"
+                className="px-2 sm:px-2 md:px-3 py-1.5 md:py-2 rounded font-bold text-xs sm:text-xs md:text-sm transition-all hover:opacity-70 cursor-pointer whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -78,6 +85,8 @@ const Navigation = () => {
           </ul>
         </div>
       )}
+      
+      <ContactDialog open={isContactOpen} onOpenChange={setIsContactOpen} />
     </nav>
   );
 };
