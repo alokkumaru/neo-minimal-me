@@ -9,25 +9,16 @@ const Home = () => {
           <div className="border-neo border-foreground shadow-neo-lg p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-primary-foreground">Hi, I'm Alok</h1>
             <p className="text-2xl md:text-3xl text-primary-foreground/90 font-bold mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" asChild>
-                <a href="mailto:your.email@example.com">
-                  <Mail className="w-5 h-5 text-black" />
-                  Email Me
-                </a>
-              </Button>
-              <Button variant="secondary" size="lg" asChild>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-5 h-5 text-black" />
-                  GitHub
-                </a>
-              </Button>
-              <Button variant="accent" size="lg" asChild>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-5 h-5 text-black" />
-                  LinkedIn
-                </a>
-              </Button>
+            <div className="flex flex-wrap gap-6">
+              <a href="mailto:your.email@example.com" className="hover:opacity-70 transition-opacity">
+                <Mail className="w-10 h-10 text-black" />
+              </a>
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                <Github className="w-10 h-10 text-black" />
+              </a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                <Linkedin className="w-10 h-10 text-black" />
+              </a>
             </div>
           </div>
 
