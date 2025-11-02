@@ -67,20 +67,20 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-4 md:pt-8 pb-12 md:pb-20 px-3 md:px-6">
-      <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-4 md:p-8">
+    <div className="min-h-screen pt-6 md:pt-8 pb-16 md:pb-20 px-5 md:px-6">
+      <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-6 md:p-8">
         <Navigation />
-        <div className="text-center mb-12 md:mb-16">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
+        <div className="text-center mb-10 md:mb-16">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
             My Work
             <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
             Things I've built (selective)
           </p>
         </div>
 
-        <div className="bg-card border-neo border-foreground shadow-neo-lg p-6 md:p-12 rounded text-center">
+        <div className="bg-card border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Work In Progress</h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
             Project showcase coming soon!

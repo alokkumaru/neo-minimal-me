@@ -17,7 +17,7 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="mb-8 md:mb-12 border-neo border-foreground shadow-neo-lg px-3 md:px-4 py-2 md:py-3 rounded relative" style={{ backgroundColor: '#FEE440' }}>
+    <nav className="mb-10 md:mb-12 border-neo border-foreground shadow-neo-lg px-4 md:px-4 py-3 md:py-3 rounded relative" style={{ backgroundColor: '#FEE440' }}>
       <div className="flex items-center justify-between">
         <img src={logo} alt="Logo" className="h-12 md:h-16 -my-4 md:-my-6 -ml-3 md:-ml-4" />
         

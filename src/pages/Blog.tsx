@@ -28,28 +28,28 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-4 md:pt-8 pb-12 md:pb-20 px-3 md:px-6">
-      <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-4 md:p-8">
+    <div className="min-h-screen pt-6 md:pt-8 pb-16 md:pb-20 px-5 md:px-6">
+      <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-6 md:p-8">
         <Navigation />
-        <div className="text-center mb-12 md:mb-16">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
+        <div className="text-center mb-10 md:mb-16">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
             Blog
             <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">✍</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
             Things I think about
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid sm:grid-cols-2 gap-6 md:gap-6">
           {posts.map((post) => (
             <Link
               key={post.id}
               to={`/blog/${post.slug}`}
               className="group cursor-pointer block"
             >
-              <article className="bg-card text-foreground border-neo border-foreground shadow-neo rounded p-4 md:p-6 h-full flex flex-col group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
-                <p className="text-xs md:text-sm mb-3 md:mb-4 flex items-center gap-2">
+              <article className="bg-card text-foreground border-neo border-foreground shadow-neo rounded p-5 md:p-6 h-full flex flex-col group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
+                <p className="text-xs md:text-sm mb-4 md:mb-4 flex items-center gap-2">
                   <Calendar className="w-3 h-3 md:w-4 md:h-4" />
                   {new Date(post.date).toLocaleDateString('en-US', { 
                     month: 'short', 
@@ -58,11 +58,11 @@ const Blog = () => {
                   })}
                 </p>
 
-                <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">
+                <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-3">
                   {post.title}
                 </h2>
 
-                <p className="text-xs md:text-sm opacity-90 mb-3 md:mb-4 flex-grow">
+                <p className="text-sm md:text-sm opacity-90 mb-4 md:mb-4 flex-grow">
                   {post.excerpt}
                 </p>
 
