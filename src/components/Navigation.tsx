@@ -12,7 +12,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-neo border-foreground shadow-neo-lg px-4 py-3 mx-auto max-w-7xl rounded" style={{ backgroundColor: '#FEE440' }}>
+    <nav className="mb-12 border-neo border-foreground shadow-neo-lg px-4 py-3 rounded" style={{ backgroundColor: '#FEE440' }}>
       <div className="flex items-center justify-between">
         <img src={logo} alt="Logo" className="h-8" />
         <ul className="flex gap-6">

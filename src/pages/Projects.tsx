@@ -1,6 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectsIcon from "@/assets/projects-icon.png";
+import Navigation from "@/components/Navigation";
 
 const Projects = () => {
   const projects = [
@@ -67,8 +68,9 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-6">
+    <div className="min-h-screen pt-8 pb-20 px-6">
       <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-8">
+        <Navigation />
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
             My Work

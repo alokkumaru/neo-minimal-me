@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
 const Home = () => {
-  return <div className="min-h-screen pt-32 pb-20 px-6">
+  return <div className="min-h-screen pt-8 pb-20 px-6">
       <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-8">
+        <Navigation />
         {/* Hero Section */}
         <section className="mb-20">
           <div className="border-neo border-foreground shadow-neo-lg p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50">
