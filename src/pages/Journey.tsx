@@ -1,4 +1,5 @@
 import { Briefcase, GraduationCap, Award } from "lucide-react";
+import journeyIcon from "@/assets/journey-icon.png";
 
 const Journey = () => {
   const experience = [
@@ -57,7 +58,10 @@ const Journey = () => {
     <div className="min-h-screen pt-32 pb-20 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6">My Journey</h1>
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
+            My Journey
+            <img src={journeyIcon} alt="Journey" className="w-16 h-16 md:w-20 md:h-20" />
+          </h1>
           <p className="text-2xl text-muted-foreground mb-8">
             Things I've done
           </p>
