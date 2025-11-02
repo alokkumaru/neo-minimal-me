@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import xLogo from "@/assets/x-logo.png";
 const Home = () => {
   return <div className="min-h-screen pt-6 md:pt-8 pb-16 md:pb-20 px-5 md:px-6">
       <div className="max-w-6xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-6 md:p-8">
@@ -12,13 +13,13 @@ const Home = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-6 text-primary-foreground">Hi, I'm Alok</h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 font-medium mb-8 md:mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
             <div className="flex flex-wrap gap-5 md:gap-6">
-              <a href="mailto:your.email@example.com" className="hover:opacity-70 transition-opacity">
-                <Mail className="w-9 h-9 md:w-10 md:h-10 text-black" />
+              <a href="https://x.com/alok_kumar_u" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                <img src={xLogo} alt="X (Twitter)" className="w-9 h-9 md:w-10 md:h-10" />
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+              <a href="https://github.com/alokkumaru" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                 <Github className="w-9 h-9 md:w-10 md:h-10 text-black" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+              <a href="https://www.linkedin.com/in/alok-kumar-u/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                 <Linkedin className="w-9 h-9 md:w-10 md:h-10 text-black" />
               </a>
             </div>
