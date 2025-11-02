@@ -1,6 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import projectsIcon from "@/assets/projects-icon.png";
 import Navigation from "@/components/Navigation";
 
 const Projects = () => {
@@ -74,7 +73,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
             My Work
-            <img src={projectsIcon} alt="Projects" className="w-16 h-16 md:w-20 md:h-20" />
+            <span className="text-6xl md:text-7xl">👨‍💻</span>
           </h1>
           <p className="text-2xl text-muted-foreground max-w-2xl mx-auto">
             Things I've built (selective)
