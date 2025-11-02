@@ -88,49 +88,6 @@ const Journey = () => {
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-4">{job.description}</p>
-                
-                {job.highlights && (
-                  <ul className="space-y-2 mb-4">
-                    {job.highlights.map((highlight, hIndex) => (
-                      <li key={hIndex} className="flex items-start gap-2">
-                        <span className="text-primary font-bold">→</span>
-                        <span className="text-sm">{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                {job.sections && (
-                  <>
-                    {job.sections.strategyProjects && (
-                      <div className="mb-3">
-                        <h4 className="font-bold mb-2">Strategy projects</h4>
-                        <ul className="space-y-2">
-                          {job.sections.strategyProjects.map((project, pIndex) => (
-                            <li key={pIndex} className="flex items-start gap-2">
-                              <span className="text-primary font-bold">→</span>
-                              <span className="text-sm">{project}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-
-                    {job.sections.dueDiligenceProjects && (
-                      <div>
-                        <h4 className="font-bold mb-2">Due diligence projects</h4>
-                        <ul className="space-y-2">
-                          {job.sections.dueDiligenceProjects.map((project, pIndex) => (
-                            <li key={pIndex} className="flex items-start gap-2">
-                              <span className="text-primary font-bold">→</span>
-                              <span className="text-sm">{project}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </>
-                )}
               </div>
             ))}
           </div>
