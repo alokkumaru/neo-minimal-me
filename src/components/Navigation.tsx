@@ -17,9 +17,9 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="mb-6 md:mb-12 border-neo border-foreground shadow-neo-lg px-2 md:px-4 py-2 md:py-3 rounded relative" style={{ backgroundColor: '#FEE440' }}>
+    <nav className="mb-8 md:mb-12 border-neo border-foreground shadow-neo-lg px-3 md:px-4 py-2 md:py-3 rounded relative" style={{ backgroundColor: '#FEE440' }}>
       <div className="flex items-center justify-between">
-        <img src={logo} alt="Logo" className="h-10 md:h-16 -my-3 md:-my-6 -ml-2 md:-ml-4" />
+        <img src={logo} alt="Logo" className="h-12 md:h-16 -my-4 md:-my-6 -ml-3 md:-ml-4" />
         
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-2 sm:gap-4 md:gap-6">
@@ -55,8 +55,8 @@ const Navigation = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 mt-1.5 bg-[#FEE440] border-neo border-foreground shadow-neo-lg rounded p-3 z-50">
-          <ul className="flex flex-col gap-1.5">
+        <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-[#FEE440] border-neo border-foreground shadow-neo-lg rounded p-4 z-50">
+          <ul className="flex flex-col gap-2">
             {links.map((link) => {
               const isActive = location.pathname === link.to;
               
@@ -65,7 +65,7 @@ const Navigation = () => {
                   <Link
                     to={link.to}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`block px-3 py-2.5 rounded font-bold text-sm transition-all ${
+                    className={`block px-4 py-3 rounded font-bold text-base transition-all ${
                       isActive
                         ? "bg-primary/10 text-primary"
                         : "hover:bg-foreground/5"

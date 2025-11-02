@@ -55,69 +55,69 @@ const Journey = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-2 md:pt-8 pb-8 md:pb-20 px-2 md:px-6">
-      <div className="max-w-4xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-3 md:p-8">
+    <div className="min-h-screen pt-4 md:pt-8 pb-12 md:pb-20 px-3 md:px-6">
+      <div className="max-w-4xl mx-auto bg-background border-neo border-foreground shadow-neo-lg rounded p-4 md:p-8">
         <Navigation />
-        <div className="text-center mb-8 md:mb-16">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 md:mb-6 flex items-center justify-center gap-2 md:gap-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
             My Journey
-            <span className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
+            <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
           </h1>
-          <p className="text-base sm:text-xl md:text-2xl text-muted-foreground mb-4 md:mb-8 px-2">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 md:mb-8 px-4">
             Things I've done
           </p>
         </div>
 
         {/* Experience */}
-        <section className="mb-8 md:mb-16">
-          <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-8">
-            <Briefcase className="w-5 h-5 md:w-8 md:h-8" />
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold">Experience</h2>
+        <section className="mb-12 md:mb-16">
+          <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+            <Briefcase className="w-6 h-6 md:w-8 md:h-8" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Experience</h2>
           </div>
-          <div className="space-y-3 md:space-y-6">
+          <div className="space-y-4 md:space-y-6">
             {experience.map((job, index) => (
               <div
                 key={index}
-                className="bg-card border-neo border-foreground shadow-neo p-3 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
+                className="bg-card border-neo border-foreground shadow-neo p-4 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
               >
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 md:mb-3 gap-1.5 md:gap-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
                   <div>
-                    <h3 className="text-lg md:text-2xl font-bold leading-tight">{job.role}</h3>
-                    <p className="text-sm md:text-lg text-muted-foreground">{job.company}</p>
+                    <h3 className="text-xl md:text-2xl font-bold">{job.role}</h3>
+                    <p className="text-base md:text-lg text-muted-foreground">{job.company}</p>
                   </div>
                   <div className="sm:text-right">
-                    <span className="text-xs md:text-sm font-bold bg-secondary text-secondary-foreground px-2 md:px-3 py-0.5 md:py-1 rounded border-2 border-foreground inline-block mb-1">
+                    <span className="text-xs md:text-sm font-bold bg-secondary text-secondary-foreground px-2 md:px-3 py-1 rounded border-2 border-foreground inline-block mb-1">
                       {job.period}
                     </span>
                     <span className="text-xs md:text-sm text-muted-foreground block sm:inline sm:ml-2">{job.location}</span>
                   </div>
                 </div>
-                <p className="text-xs md:text-base text-muted-foreground leading-snug">{job.description}</p>
+                <p className="text-sm md:text-base text-muted-foreground mb-4">{job.description}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* Education */}
-        <section className="mb-8 md:mb-16">
-          <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-8">
-            <GraduationCap className="w-5 h-5 md:w-8 md:h-8" />
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold">Education</h2>
+        <section className="mb-12 md:mb-16">
+          <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+            <GraduationCap className="w-6 h-6 md:w-8 md:h-8" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Education</h2>
           </div>
-          <div className="space-y-3 md:space-y-6">
+          <div className="space-y-4 md:space-y-6">
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="bg-card text-foreground border-neo border-foreground shadow-neo p-3 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
+                className="bg-card text-foreground border-neo border-foreground shadow-neo p-4 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
               >
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 md:mb-3 gap-1.5 md:gap-2">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
                   <div>
-                    <h3 className="text-lg md:text-2xl font-bold leading-tight">{edu.degree}</h3>
-                    <p className="text-sm md:text-lg text-muted-foreground">{edu.institution}</p>
-                    <p className="text-xs md:text-sm text-muted-foreground mt-0.5 md:mt-1">{edu.gpa}</p>
+                    <h3 className="text-xl md:text-2xl font-bold">{edu.degree}</h3>
+                    <p className="text-base md:text-lg text-muted-foreground">{edu.institution}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground mt-1">{edu.gpa}</p>
                   </div>
                   <div className="sm:text-right">
-                    <span className="text-xs md:text-sm font-bold bg-background text-foreground px-2 md:px-3 py-0.5 md:py-1 rounded border-2 border-foreground inline-block mb-1">
+                    <span className="text-xs md:text-sm font-bold bg-background text-foreground px-2 md:px-3 py-1 rounded border-2 border-foreground inline-block mb-1">
                       {edu.period}
                     </span>
                     <span className="text-xs md:text-sm text-muted-foreground block sm:inline sm:ml-2">{edu.location}</span>
@@ -130,16 +130,16 @@ const Journey = () => {
 
         {/* Activities and Interests */}
         <section>
-          <div className="flex items-center gap-2 md:gap-4 mb-4 md:mb-8">
-            <Award className="w-5 h-5 md:w-8 md:h-8" />
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold">Activities and Interests</h2>
+          <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+            <Award className="w-6 h-6 md:w-8 md:h-8" />
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Activities and Interests</h2>
           </div>
-          <div className="bg-card text-foreground border-neo border-foreground shadow-neo p-3 md:p-8 rounded">
-            <ul className="space-y-2 md:space-y-4">
+          <div className="bg-card text-foreground border-neo border-foreground shadow-neo p-4 md:p-8 rounded">
+            <ul className="space-y-3 md:space-y-4">
               {activities.map((activity, index) => (
-                <li key={index} className="flex items-start gap-1.5 md:gap-3">
-                  <span className="text-lg md:text-2xl">→</span>
-                  <span className="text-xs md:text-base lg:text-lg leading-snug">{activity}</span>
+                <li key={index} className="flex items-start gap-2 md:gap-3">
+                  <span className="text-xl md:text-2xl">→</span>
+                  <span className="text-sm md:text-base lg:text-lg">{activity}</span>
                 </li>
               ))}
             </ul>
