@@ -41,43 +41,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Quick Links */}
-        <section className="mb-20">
-          <h2 className="text-4xl font-bold mb-8">Quick Links</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/projects" className="group">
-              <div className="bg-card border-neo border-foreground shadow-neo p-6 rounded h-full group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
-                <h3 className="text-2xl font-bold mb-2">Projects</h3>
-                <p className="text-muted-foreground">Check out my work</p>
-                <ArrowRight className="w-6 h-6 mt-4" />
-              </div>
-            </Link>
-
-            <Link to="/blog" className="group">
-              <div className="bg-card border-neo border-foreground shadow-neo p-6 rounded h-full group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
-                <h3 className="text-2xl font-bold mb-2">Blog</h3>
-                <p className="text-muted-foreground">Read my thoughts</p>
-                <ArrowRight className="w-6 h-6 mt-4" />
-              </div>
-            </Link>
-
-            <Link to="/socials" className="group">
-              <div className="bg-card border-neo border-foreground shadow-neo p-6 rounded h-full group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
-                <h3 className="text-2xl font-bold mb-2">Socials</h3>
-                <p className="text-muted-foreground">Connect with me</p>
-                <ArrowRight className="w-6 h-6 mt-4" />
-              </div>
-            </Link>
-
-            <Link to="/cv" className="group">
-              <div className="bg-card border-neo border-foreground shadow-neo p-6 rounded h-full group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
-                <h3 className="text-2xl font-bold mb-2">Resume</h3>
-                <p className="text-muted-foreground">View my CV</p>
-                <ArrowRight className="w-6 h-6 mt-4" />
-              </div>
-            </Link>
-          </div>
-        </section>
 
         {/* CTA Section */}
         
