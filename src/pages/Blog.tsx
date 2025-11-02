@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const posts = [
     {
+      id: "corporate-hegemony",
+      title: "The Rise of Corporate Hegemony",
+      excerpt: "Tracing how corporations came to dominate the global economic and political landscape.",
+      date: "2025-01-10",
+      slug: "corporate-hegemony",
+    },
+    {
       id: "storage-ai-infra",
       title: "Storage is the invisible opportunity in AI infra",
       excerpt: "AI workload is driving the necessity for cloud storage services, with cloud storage growing at ~20% CAGR.",

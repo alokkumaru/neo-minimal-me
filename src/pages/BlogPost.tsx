@@ -4,7 +4,105 @@ import { Link, useParams } from "react-router-dom";
 const BlogPost = () => {
   const { slug } = useParams();
 
-  // Only one blog post for now
+  // Corporate Hegemony post
+  if (slug === "corporate-hegemony") {
+    return (
+      <div className="min-h-screen pt-32 pb-20 px-6">
+        <article className="max-w-4xl mx-auto">
+          <Link
+            to="/blog"
+            className="inline-flex items-center gap-2 mb-8 hover:opacity-70 transition-opacity"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Blog
+          </Link>
+
+          <header className="mb-12">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              The Rise of Corporate Hegemony
+            </h1>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Calendar className="w-5 h-5" />
+              <time dateTime="2025-01-10">Jan 10, 2025</time>
+            </div>
+          </header>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="text-xl mb-8">Tracing how corporations came to dominate the global economic and political landscape.</p>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Understanding Hegemony</h2>
+              <p className="mb-4">
+                Hegemony — the dominance of one group over others — has existed in various forms throughout history. It arises from humanity's innate desire for control and influence. Over time, hegemony has manifested through different structures, whether cultural, religious, political, or economic.
+              </p>
+              <p className="mb-4">
+                Examples include cultural hegemonies like patriarchy, religious hegemonies like Islam in the Middle East, racial hegemonies such as white dominance in the US and Europe, and political hegemonies including communism in the Soviet Union and capitalism in the West. Perhaps the most visible was imperialism — the European domination of the world through colonization, trade, and resource extraction.
+              </p>
+              <div className="bg-yellow-300 border-neo border-foreground shadow-neo p-6 rounded my-6">
+                <strong>💡 Key Idea:</strong> Hegemonies evolve — from empires and monarchies to corporate boardrooms — but the pursuit of dominance remains constant.
+              </div>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">The Cycle of Consolidation and Fragmentation</h2>
+              <p className="mb-4">
+                Hegemonies are cyclical. They rise through consolidation of power and wealth — a natural outcome of the law of concentration and centralization. Over time, however, fragmentation sets in as competition, innovation, or public resistance erodes the dominance of any single entity.
+              </p>
+              <p className="mb-4">
+                In economics, markets initially resist monopoly. New entrants create diversity and innovation. But as markets mature, a few players consolidate control, often through mergers, acquisitions, or control over key resources. Eventually, these hegemonies reach their limits, face regulation, or collapse under their own inefficiencies, allowing the cycle to reset.
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">The Birth of Corporate Hegemony</h2>
+              <p className="mb-4">
+                Corporate hegemony emerged as the capitalist system matured. Up until the late 1800s, competition was a defining feature of capitalism. However, with the advent of the joint-stock company, firms began to expand rapidly, pooling capital from numerous investors to fuel industrial growth.
+              </p>
+              <p className="mb-4">
+                During the late 19th century, overproduction led to cyclical recessions and depressions. In response, companies sought stability through mergers and trusts. Between the 1880s and early 1900s, a wave of consolidation — driven by technological innovation and financial capital — birthed modern corporate giants. Advertising, branding, and imperial expansion helped sustain profits. By the interwar years, oligopolistic structures dominated Western economies.
+              </p>
+              <p className="mb-4">
+                By the 1950s and 60s, the so-called "monopoly capitalism" era had arrived — characterized by the interplay of big business, big government, and big labor. Corporate conglomerates became not just economic actors but political power centers influencing policy, labor, and even international relations.
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Case Study: Concentration and Monopoly in Banking</h2>
+              <p className="mb-4">
+                The consolidation of banking power began in the 19th century, paralleling industrial growth. As capital requirements for large-scale industries grew, so did the influence of financiers like J.P. Morgan, whose empire would become synonymous with corporate consolidation.
+              </p>
+              <p className="mb-4">
+                Through the process later known as <strong>"Morganization"</strong>, J.P. Morgan orchestrated mergers that stabilized industries — but also concentrated immense economic power into a handful of corporate entities. His consolidation began with the railroads, where fragmented operators were combined into integrated systems, reducing ruinous competition. This model spread rapidly across other sectors.
+              </p>
+              <ul className="space-y-3 list-disc pl-6 mb-4">
+                <li><strong>Railroads:</strong> Morgan merged competing lines to form vast networks like the Northern Securities Company.</li>
+                <li><strong>Steel:</strong> He combined Carnegie Steel and other producers to form U.S. Steel, the first billion-dollar corporation.</li>
+                <li><strong>Electricity:</strong> Through General Electric, Morgan consolidated competing firms such as Edison Electric and Thomson-Houston.</li>
+              </ul>
+              <p className="mb-4">
+                Similar patterns appeared across industries. Oil was consolidated under Rockefeller's Standard Oil; chemicals under DuPont; automobiles under Ford, General Motors, and Chrysler; and aluminum under Mellon's Alcoa. These oligopolies defined American and global capitalism through much of the 20th century.
+              </p>
+              <div className="bg-yellow-300 border-neo border-foreground shadow-neo p-6 rounded my-6">
+                <strong>💡 Reflection:</strong> The fact that most global industrial giants originated and remained concentrated in the West represents a form of hegemony in itself — economic, cultural, and ideological.
+              </div>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 bg-foreground text-background inline-block px-4 py-2">Conclusion</h2>
+              <p className="mb-4">
+                From ancient empires to modern multinationals, hegemony has merely changed form, not substance. Corporate dominance represents the contemporary expression of humanity's enduring hierarchy — economic entities exercising power not just over markets, but over governments, workers, and societies.
+              </p>
+              <p className="mb-4">
+                As digital monopolies and AI-driven corporations rise today, we may be witnessing yet another phase in the timeless cycle of consolidation and fragmentation — the dawn of algorithmic hegemony.
+              </p>
+            </section>
+          </div>
+        </article>
+      </div>
+    );
+  }
+
+  // Storage AI post
   if (slug !== "storage-ai-infra") {
     return (
       <div className="min-h-screen pt-32 pb-20 px-6">
