@@ -39,6 +39,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -57,6 +61,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        neo: {
+          blue: "hsl(var(--neo-blue))",
+          yellow: "hsl(var(--neo-yellow))",
+          pink: "hsl(var(--neo-pink))",
+          green: "hsl(var(--neo-green))",
+        },
+      },
+      boxShadow: {
+        'neo': 'var(--neo-shadow)',
+        'neo-lg': 'var(--neo-shadow-lg)',
+      },
+      borderWidth: {
+        'neo': 'var(--neo-border)',
       },
       borderRadius: {
         lg: "var(--radius)",
