@@ -23,15 +23,17 @@ const Journey = () => {
       period: "Jul 2022 – Jun 2024",
       location: "Mumbai",
       description: "Led 10+ engagements across transaction advisory and strategy with top PE firms, global educational companies, and governments",
-      strategyProjects: [
-        "Crafted GTM strategy for the University of Southampton's India launch, the first foreign university campus (established in 2025)",
-        "Advised the ministry of a major economy on public EdTech policy, led 3 C-level workshops to drive investments in the sector"
-      ],
-      dueDiligenceProjects: [
-        "Delivered vendor due diligence to support the USD Xbn sale of the largest private K12 education provider in the USA",
-        "Built the market report for the USD 200 million IPO for UAE's #2 K12 education provider, via TAM, growth, competitor analysis",
-        "Prepared the investment memo to support secondary sale of the largest Higher Education network in Africa (USD X Bn deal)"
-      ]
+      sections: {
+        strategyProjects: [
+          "Crafted GTM strategy for the University of Southampton's India launch, the first foreign university campus (established in 2025)",
+          "Advised the ministry of a major economy on public EdTech policy, led 3 C-level workshops to drive investments in the sector"
+        ],
+        dueDiligenceProjects: [
+          "Delivered vendor due diligence to support the USD Xbn sale of the largest private K12 education provider in the USA",
+          "Built the market report for the USD 200 million IPO for UAE's #2 K12 education provider, via TAM, growth, competitor analysis",
+          "Prepared the investment memo to support secondary sale of the largest Higher Education network in Africa (USD X Bn deal)"
+        ]
+      }
     }
   ];
 
@@ -42,7 +44,7 @@ const Journey = () => {
       period: "May. 2018 – May 2022",
       location: "Kharagpur",
       gpa: "CGPA 8.6/10"
-    },
+    }
   ];
 
   const activities = [
@@ -98,32 +100,36 @@ const Journey = () => {
                   </ul>
                 )}
 
-                {job.strategyProjects && (
-                  <div className="mb-3">
-                    <h4 className="font-bold mb-2">Strategy projects</h4>
-                    <ul className="space-y-2">
-                      {job.strategyProjects.map((project, pIndex) => (
-                        <li key={pIndex} className="flex items-start gap-2">
-                          <span className="text-primary font-bold">→</span>
-                          <span className="text-sm">{project}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                {job.sections && (
+                  <>
+                    {job.sections.strategyProjects && (
+                      <div className="mb-3">
+                        <h4 className="font-bold mb-2">Strategy projects</h4>
+                        <ul className="space-y-2">
+                          {job.sections.strategyProjects.map((project, pIndex) => (
+                            <li key={pIndex} className="flex items-start gap-2">
+                              <span className="text-primary font-bold">→</span>
+                              <span className="text-sm">{project}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
-                {job.dueDiligenceProjects && (
-                  <div>
-                    <h4 className="font-bold mb-2">Due diligence projects</h4>
-                    <ul className="space-y-2">
-                      {job.dueDiligenceProjects.map((project, pIndex) => (
-                        <li key={pIndex} className="flex items-start gap-2">
-                          <span className="text-primary font-bold">→</span>
-                          <span className="text-sm">{project}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                    {job.sections.dueDiligenceProjects && (
+                      <div>
+                        <h4 className="font-bold mb-2">Due diligence projects</h4>
+                        <ul className="space-y-2">
+                          {job.sections.dueDiligenceProjects.map((project, pIndex) => (
+                            <li key={pIndex} className="flex items-start gap-2">
+                              <span className="text-primary font-bold">→</span>
+                              <span className="text-sm">{project}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             ))}
