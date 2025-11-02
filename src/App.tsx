@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import Socials from "./pages/Socials";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Projects from "./pages/Projects";
 import CV from "./pages/CV";
 import NotFound from "./pages/NotFound";
@@ -21,6 +22,7 @@ const App = () => <QueryClientProvider client={queryClient}>
           <Route path="/" element={<Home />} />
           <Route path="/socials" element={<Socials />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/cv" element={<CV />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
