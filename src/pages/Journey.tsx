@@ -59,7 +59,7 @@ const Journey = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6">My Journey</h1>
           <p className="text-2xl text-muted-foreground mb-8">
-            Experience, education, and passions that shaped my path
+            Things I've done
           </p>
         </div>
 
