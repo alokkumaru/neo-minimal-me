@@ -103,19 +103,19 @@ const Journey = () => {
             {education.map((edu, index) => (
               <div
                 key={index}
-                className="bg-primary text-primary-foreground border-neo border-foreground shadow-neo p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
+                className="bg-card text-foreground border-neo border-foreground shadow-neo p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
               >
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
                   <div>
                     <h3 className="text-2xl font-bold">{edu.degree}</h3>
-                    <p className="text-lg opacity-90">{edu.institution}</p>
-                    <p className="text-sm opacity-80 mt-1">{edu.gpa}</p>
+                    <p className="text-lg text-muted-foreground">{edu.institution}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{edu.gpa}</p>
                   </div>
                   <div className="text-right">
                     <span className="text-sm font-bold bg-background text-foreground px-3 py-1 rounded border-2 border-foreground block mb-1">
                       {edu.period}
                     </span>
-                    <span className="text-sm opacity-80">{edu.location}</span>
+                    <span className="text-sm text-muted-foreground">{edu.location}</span>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ const Journey = () => {
             <Award className="w-8 h-8" />
             <h2 className="text-4xl font-bold">Activities and Interests</h2>
           </div>
-          <div className="bg-accent text-accent-foreground border-neo border-foreground shadow-neo p-8 rounded">
+          <div className="bg-card text-foreground border-neo border-foreground shadow-neo p-8 rounded">
             <ul className="space-y-4">
               {activities.map((activity, index) => (
                 <li key={index} className="flex items-start gap-3">
