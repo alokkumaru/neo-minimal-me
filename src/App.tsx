@@ -16,9 +16,9 @@ const App = () => <QueryClientProvider client={queryClient}>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navigation className="py-[15px]" />
+        <Navigation />
         <Routes>
-          <Route path="/" element={<Home />} className="py-[15px]" />
+          <Route path="/" element={<Home />} />
           <Route path="/socials" element={<Socials />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/projects" element={<Projects />} />

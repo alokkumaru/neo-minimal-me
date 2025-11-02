@@ -11,8 +11,8 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-card border-neo border-foreground shadow-neo-lg px-4 py-3 rounded">
-      <ul className="flex gap-2">
+    <nav className="fixed top-0 left-1/2 -translate-x-1/2 z-50 bg-card border-neo border-foreground shadow-neo-lg px-4 py-3 rounded">
+      <ul className="flex gap-6">
         {links.map((link) => {
           const isActive = location.pathname === link.to;
           
@@ -20,10 +20,10 @@ const Navigation = () => {
             <li key={link.to}>
               <Link
                 to={link.to}
-                className={`px-4 py-2 rounded font-bold transition-all border-2 border-foreground ${
+                className={`px-4 py-2 rounded font-bold transition-all ${
                   isActive
-                    ? "bg-primary text-primary-foreground shadow-[3px_3px_0px_0px_hsl(var(--foreground))]"
-                    : "bg-background hover:translate-x-0.5 hover:translate-y-0.5 shadow-[3px_3px_0px_0px_hsl(var(--foreground))] hover:shadow-none"
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-background hover:opacity-70"
                 }`}
               >
                 {link.label}
