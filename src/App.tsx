@@ -9,7 +9,7 @@ import Socials from "./pages/Socials";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Projects from "./pages/Projects";
-import CV from "./pages/CV";
+import Journey from "./pages/Journey";
 import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 const App = () => <QueryClientProvider client={queryClient}>
@@ -24,7 +24,7 @@ const App = () => <QueryClientProvider client={queryClient}>
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/cv" element={<CV />} />
+          <Route path="/journey" element={<Journey />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
