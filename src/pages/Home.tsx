@@ -80,12 +80,7 @@ const Home = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-card border-neo border-foreground shadow-neo-lg p-12 rounded text-center">
-          <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-          </p>
-        </section>
+        
       </div>
     </div>;
 };
