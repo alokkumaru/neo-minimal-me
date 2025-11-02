@@ -1,8 +1,38 @@
-import { ArrowRight, Github, Linkedin, Mail, Calendar, Briefcase, GraduationCap, Award } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Calendar, Briefcase, GraduationCap, Award, Send } from "lucide-react";
+import { Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const SinglePage = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // TODO: Implement email sending via edge function
+    // Placeholder for now
+    toast({
+      title: "Message received!",
+      description: "Thank you for reaching out. I'll get back to you soon.",
+    });
+    
+    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(false);
+  };
+
   const posts = [
     {
       id: "storage-ai-infra",
@@ -90,13 +120,13 @@ const SinglePage = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-6 text-primary-foreground">Hi, I'm Alok</h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 font-medium mb-8 md:mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
             <div className="flex flex-wrap gap-5 md:gap-6">
-              <a href="mailto:your.email@example.com" className="hover:opacity-70 transition-opacity">
-                <Mail className="w-9 h-9 md:w-10 md:h-10 text-black" />
+              <a href="https://x.com/alok_kumar_u" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                <Twitter className="w-9 h-9 md:w-10 md:h-10 text-black" />
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+              <a href="https://github.com/alokkumaru" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                 <Github className="w-9 h-9 md:w-10 md:h-10 text-black" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+              <a href="https://www.linkedin.com/in/alok-kumar-u/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                 <Linkedin className="w-9 h-9 md:w-10 md:h-10 text-black" />
               </a>
             </div>
@@ -258,6 +288,70 @@ const SinglePage = () => {
                 ))}
               </ul>
             </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="mt-16 md:mt-24 scroll-mt-24">
+          <div className="text-center mb-10 md:mb-16">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
+              Get in Touch
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">📬</span>
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
+              Have a question or want to work together?
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <form onSubmit={handleSubmit} className="bg-card border-neo border-foreground shadow-neo-lg p-6 md:p-8 rounded space-y-6">
+              <div className="space-y-2">
+                <Label htmlFor="name" className="text-base md:text-lg font-bold">Name</Label>
+                <Input
+                  id="name"
+                  type="text"
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  required
+                  className="border-2 border-foreground focus:ring-2 focus:ring-primary"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-base md:text-lg font-bold">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  required
+                  className="border-2 border-foreground focus:ring-2 focus:ring-primary"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message" className="text-base md:text-lg font-bold">Message</Label>
+                <Textarea
+                  id="message"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
+                  className="border-2 border-foreground focus:ring-2 focus:ring-primary min-h-[150px]"
+                  placeholder="Your message..."
+                />
+              </div>
+
+              <Button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full border-2 border-foreground shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-base md:text-lg py-6"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+                <Send className="ml-2 w-5 h-5" />
+              </Button>
+            </form>
           </div>
         </section>
       </div>

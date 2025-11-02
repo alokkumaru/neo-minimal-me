@@ -12,6 +12,7 @@ const Navigation = () => {
     { to: "#blog", label: "Blog" },
     { to: "#projects", label: "Projects" },
     { to: "#journey", label: "Journey" },
+    { to: "#contact", label: "Get in Touch" },
   ];
 
   const scrollToSection = (sectionId: string) => {
