@@ -43,7 +43,7 @@ const Blog = () => {
               to={`/blog/${post.slug}`}
               className="group cursor-pointer block"
             >
-              <article className="bg-primary border-neo border-foreground shadow-neo rounded p-6 h-full flex flex-col group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
+              <article className="bg-card text-foreground border-neo border-foreground shadow-neo rounded p-6 h-full flex flex-col group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
                 <p className="text-sm mb-4 flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
                   {new Date(post.date).toLocaleDateString('en-US', { 
