@@ -46,7 +46,7 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(link.to);
                 }}
-                className="px-2 sm:px-3 md:px-4 py-1.5 md:py-2 rounded font-bold text-xs sm:text-sm md:text-base transition-all hover:opacity-70 cursor-pointer"
+                className="px-2 sm:px-2 md:px-3 py-1.5 md:py-2 rounded font-bold text-xs sm:text-xs md:text-sm transition-all hover:opacity-70 cursor-pointer whitespace-nowrap"
               >
                 {link.label}
               </a>
