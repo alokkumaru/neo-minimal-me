@@ -1,5 +1,4 @@
 import { Briefcase, GraduationCap, Award } from "lucide-react";
-import journeyIcon from "@/assets/journey-icon.png";
 import Navigation from "@/components/Navigation";
 
 const Journey = () => {
@@ -62,7 +61,7 @@ const Journey = () => {
         <div className="text-center mb-16">
           <h1 className="text-6xl md:text-7xl font-bold mb-6 flex items-center justify-center gap-4">
             My Journey
-            <img src={journeyIcon} alt="Journey" className="w-16 h-16 md:w-20 md:h-20" />
+            <span className="text-6xl md:text-7xl">🚀</span>
           </h1>
           <p className="text-2xl text-muted-foreground mb-8">
             Things I've done
