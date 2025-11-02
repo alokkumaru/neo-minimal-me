@@ -8,7 +8,7 @@ const Home = () => {
         <section className="mb-20">
           <div className="border-neo border-foreground shadow-neo-lg p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50">
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-primary-foreground">Hi, I'm Alok</h1>
-            <p className="text-2xl md:text-3xl text-primary-foreground/90 font-bold mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
+            <p className="text-2xl md:text-3xl text-primary-foreground/90 font-medium mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
             <div className="flex flex-wrap gap-6">
               <a href="mailto:your.email@example.com" className="hover:opacity-70 transition-opacity">
                 <Mail className="w-10 h-10 text-black" />
