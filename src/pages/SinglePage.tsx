@@ -106,12 +106,14 @@ const SinglePage = () => {
 
         {/* Blog Section */}
         <section id="blog" className="mb-16 md:mb-24 scroll-mt-24">
-          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-8 bg-slate-50">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
-              Blog
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">✍</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 max-w-2xl mx-auto px-2 text-center">
+          <div className="text-center mb-10 md:mb-16">
+            <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-6 bg-slate-50 inline-block">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center gap-3 md:gap-4 text-primary-foreground">
+                Blog
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">✍</span>
+              </h1>
+            </div>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
               Things I think about
             </p>
           </div>
@@ -153,12 +155,14 @@ const SinglePage = () => {
 
         {/* Projects Section */}
         <section id="projects" className="mb-16 md:mb-24 scroll-mt-24">
-          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-8 bg-slate-50">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
-              Projects
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 max-w-2xl mx-auto px-2 text-center">
+          <div className="text-center mb-10 md:mb-16">
+            <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-6 bg-slate-50 inline-block">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center gap-3 md:gap-4 text-primary-foreground">
+                Projects
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
+              </h1>
+            </div>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
               Things I've built (selective)
             </p>
           </div>
@@ -173,12 +177,14 @@ const SinglePage = () => {
 
         {/* Journey Section */}
         <section id="journey" className="scroll-mt-24">
-          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-8 bg-slate-50">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
-              My Journey
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 px-2 text-center">
+          <div className="text-center mb-10 md:mb-16">
+            <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-6 bg-slate-50 inline-block">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center gap-3 md:gap-4 text-primary-foreground">
+                My Journey
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
+              </h1>
+            </div>
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground px-2">
               Things I've done
             </p>
           </div>
