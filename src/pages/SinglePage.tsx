@@ -1,5 +1,5 @@
 import { ArrowRight, Github, Linkedin, Calendar, Briefcase, GraduationCap, Award } from "lucide-react";
-import { Twitter } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 
@@ -92,7 +92,7 @@ const SinglePage = () => {
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 font-medium mb-8 md:mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
             <div className="flex flex-wrap gap-5 md:gap-6">
               <a href="https://x.com/alok_kumar_u" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                <Twitter className="w-9 h-9 md:w-10 md:h-10 text-black" />
+                <FaXTwitter className="w-9 h-9 md:w-10 md:h-10 text-black" />
               </a>
               <a href="https://github.com/alokkumaru" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                 <Github className="w-9 h-9 md:w-10 md:h-10 text-black" />
