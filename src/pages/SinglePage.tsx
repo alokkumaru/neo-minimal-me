@@ -89,7 +89,7 @@ const SinglePage = () => {
         <section id="home" className="mb-16 md:mb-24 scroll-mt-24 relative">
           <div className="absolute inset-0 background-grid-light"></div>
           <div className="faint-mask-overlay"></div>
-          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50 relative z-10">
+          <div className="relative z-10 mb-8">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-6 text-primary-foreground">Hi, I'm Alok</h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 font-medium mb-8 md:mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
             <div className="flex flex-wrap gap-5 md:gap-6">
