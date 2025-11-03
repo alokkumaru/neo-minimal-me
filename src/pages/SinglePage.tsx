@@ -106,158 +106,164 @@ const SinglePage = () => {
 
         {/* Blog Section */}
         <section id="blog" className="mb-16 md:mb-24 scroll-mt-24">
-          <div className="text-center mb-10 md:mb-16">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
-              Blog
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">✍</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
-              Things I think about
-            </p>
-          </div>
+          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded bg-slate-50">
+            <div className="text-center mb-10 md:mb-16">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
+                Blog
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">✍</span>
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
+                Things I think about
+              </p>
+            </div>
 
-          <div className="grid sm:grid-cols-2 gap-6 md:gap-6">
-            {posts.map((post) => (
-              <Link
-                key={post.id}
-                to={`/blog/${post.slug}`}
-                className="group cursor-pointer block"
-              >
-                <article className="bg-card text-foreground border-neo border-foreground shadow-neo rounded p-5 md:p-6 h-full flex flex-col group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
-                  <p className="text-xs md:text-sm mb-4 md:mb-4 flex items-center gap-2">
-                    <Calendar className="w-3 h-3 md:w-4 md:h-4" />
-                    {new Date(post.date).toLocaleDateString('en-US', { 
-                      month: 'short', 
-                      day: 'numeric', 
-                      year: 'numeric' 
-                    })}
-                  </p>
+            <div className="grid sm:grid-cols-2 gap-6 md:gap-6">
+              {posts.map((post) => (
+                <Link
+                  key={post.id}
+                  to={`/blog/${post.slug}`}
+                  className="group cursor-pointer block"
+                >
+                  <article className="bg-card text-foreground border-neo border-foreground shadow-neo rounded p-5 md:p-6 h-full flex flex-col group-hover:translate-x-2 group-hover:translate-y-2 group-hover:shadow-none transition-all">
+                    <p className="text-xs md:text-sm mb-4 md:mb-4 flex items-center gap-2">
+                      <Calendar className="w-3 h-3 md:w-4 md:h-4" />
+                      {new Date(post.date).toLocaleDateString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric', 
+                        year: 'numeric' 
+                      })}
+                    </p>
 
-                  <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-3">
-                    {post.title}
-                  </h2>
+                    <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-3">
+                      {post.title}
+                    </h2>
 
-                  <p className="text-sm md:text-sm opacity-90 mb-4 md:mb-4 flex-grow">
-                    {post.excerpt}
-                  </p>
+                    <p className="text-sm md:text-sm opacity-90 mb-4 md:mb-4 flex-grow">
+                      {post.excerpt}
+                    </p>
 
-                  <div className="flex items-center gap-2 font-bold mt-auto text-sm md:text-base">
-                    Read More
-                    <ArrowRight className="w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </article>
-              </Link>
-            ))}
+                    <div className="flex items-center gap-2 font-bold mt-auto text-sm md:text-base">
+                      Read More
+                      <ArrowRight className="w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </article>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Projects Section */}
         <section id="projects" className="mb-16 md:mb-24 scroll-mt-24">
-          <div className="text-center mb-10 md:mb-16">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
-              Projects
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
-              Things I've built (selective)
-            </p>
-          </div>
+          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded bg-slate-50">
+            <div className="text-center mb-10 md:mb-16">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
+                Projects
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
+                Things I've built (selective)
+              </p>
+            </div>
 
-          <div className="bg-card border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Work In Progress</h2>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-              Project showcase coming soon!
-            </p>
+            <div className="bg-card border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Work In Progress</h2>
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
+                Project showcase coming soon!
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Journey Section */}
         <section id="journey" className="scroll-mt-24">
-          <div className="text-center mb-10 md:mb-16">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
-              My Journey
-              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground px-2">
-              Things I've done
-            </p>
-          </div>
-
-          {/* Experience */}
-          <div className="mb-12 md:mb-16">
-            <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
-              <Briefcase className="w-6 h-6 md:w-8 md:h-8" />
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Experience</h2>
+          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded bg-slate-50">
+            <div className="text-center mb-10 md:mb-16">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
+                My Journey
+                <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground px-2">
+                Things I've done
+              </p>
             </div>
-            <div className="space-y-4 md:space-y-6">
-              {experience.map((job, index) => (
-                <div
-                  key={index}
-                  className="bg-card border-neo border-foreground shadow-neo p-4 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
-                >
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
-                    <div>
-                      <h3 className="text-xl md:text-2xl font-bold">{job.role}</h3>
-                      <p className="text-base md:text-lg text-muted-foreground">{job.company}</p>
+
+            {/* Experience */}
+            <div className="mb-12 md:mb-16">
+              <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                <Briefcase className="w-6 h-6 md:w-8 md:h-8" />
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Experience</h2>
+              </div>
+              <div className="space-y-4 md:space-y-6">
+                {experience.map((job, index) => (
+                  <div
+                    key={index}
+                    className="bg-card border-neo border-foreground shadow-neo p-4 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+                      <div>
+                        <h3 className="text-xl md:text-2xl font-bold">{job.role}</h3>
+                        <p className="text-base md:text-lg text-muted-foreground">{job.company}</p>
+                      </div>
+                      <div className="sm:text-right">
+                        <span className="text-xs md:text-sm font-bold bg-secondary text-secondary-foreground px-2 md:px-3 py-1 rounded border-2 border-foreground inline-block mb-1">
+                          {job.period}
+                        </span>
+                        <span className="text-xs md:text-sm text-muted-foreground block sm:inline sm:ml-2">{job.location}</span>
+                      </div>
                     </div>
-                    <div className="sm:text-right">
-                      <span className="text-xs md:text-sm font-bold bg-secondary text-secondary-foreground px-2 md:px-3 py-1 rounded border-2 border-foreground inline-block mb-1">
-                        {job.period}
-                      </span>
-                      <span className="text-xs md:text-sm text-muted-foreground block sm:inline sm:ml-2">{job.location}</span>
-                    </div>
+                    <p className="text-sm md:text-base text-muted-foreground mb-4">{job.description}</p>
                   </div>
-                  <p className="text-sm md:text-base text-muted-foreground mb-4">{job.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Education */}
-          <div className="mb-12 md:mb-16">
-            <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
-              <GraduationCap className="w-6 h-6 md:w-8 md:h-8" />
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Education</h2>
-            </div>
-            <div className="space-y-4 md:space-y-6">
-              {education.map((edu, index) => (
-                <div
-                  key={index}
-                  className="bg-card text-foreground border-neo border-foreground shadow-neo p-4 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
-                >
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
-                    <div>
-                      <h3 className="text-xl md:text-2xl font-bold">{edu.degree}</h3>
-                      <p className="text-base md:text-lg text-muted-foreground">{edu.institution}</p>
-                      <p className="text-xs md:text-sm text-muted-foreground mt-1">{edu.gpa}</p>
-                    </div>
-                    <div className="sm:text-right">
-                      <span className="text-xs md:text-sm font-bold bg-background text-foreground px-2 md:px-3 py-1 rounded border-2 border-foreground inline-block mb-1">
-                        {edu.period}
-                      </span>
-                      <span className="text-xs md:text-sm text-muted-foreground block sm:inline sm:ml-2">{edu.location}</span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Activities and Interests */}
-          <div>
-            <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
-              <Award className="w-6 h-6 md:w-8 md:h-8" />
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Activities and Interests</h2>
-            </div>
-            <div className="bg-card text-foreground border-neo border-foreground shadow-neo p-4 md:p-8 rounded">
-              <ul className="space-y-3 md:space-y-4">
-                {activities.map((activity, index) => (
-                  <li key={index} className="flex items-start gap-2 md:gap-3">
-                    <span className="text-xl md:text-2xl">→</span>
-                    <span className="text-sm md:text-base lg:text-lg">{activity}</span>
-                  </li>
                 ))}
-              </ul>
+              </div>
+            </div>
+
+            {/* Education */}
+            <div className="mb-12 md:mb-16">
+              <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                <GraduationCap className="w-6 h-6 md:w-8 md:h-8" />
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Education</h2>
+              </div>
+              <div className="space-y-4 md:space-y-6">
+                {education.map((edu, index) => (
+                  <div
+                    key={index}
+                    className="bg-card text-foreground border-neo border-foreground shadow-neo p-4 md:p-6 rounded hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all"
+                  >
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 gap-2">
+                      <div>
+                        <h3 className="text-xl md:text-2xl font-bold">{edu.degree}</h3>
+                        <p className="text-base md:text-lg text-muted-foreground">{edu.institution}</p>
+                        <p className="text-xs md:text-sm text-muted-foreground mt-1">{edu.gpa}</p>
+                      </div>
+                      <div className="sm:text-right">
+                        <span className="text-xs md:text-sm font-bold bg-background text-foreground px-2 md:px-3 py-1 rounded border-2 border-foreground inline-block mb-1">
+                          {edu.period}
+                        </span>
+                        <span className="text-xs md:text-sm text-muted-foreground block sm:inline sm:ml-2">{edu.location}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Activities and Interests */}
+            <div>
+              <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
+                <Award className="w-6 h-6 md:w-8 md:h-8" />
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Activities and Interests</h2>
+              </div>
+              <div className="bg-card text-foreground border-neo border-foreground shadow-neo p-4 md:p-8 rounded">
+                <ul className="space-y-3 md:space-y-4">
+                  {activities.map((activity, index) => (
+                    <li key={index} className="flex items-start gap-2 md:gap-3">
+                      <span className="text-xl md:text-2xl">→</span>
+                      <span className="text-sm md:text-base lg:text-lg">{activity}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
