@@ -107,8 +107,8 @@ const SinglePage = () => {
         {/* Blog Section */}
         <section id="blog" className="mb-16 md:mb-24 scroll-mt-24">
           <div className="text-center mb-10 md:mb-16">
-            <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-6 bg-slate-50 inline-block">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center gap-3 md:gap-4 text-primary-foreground">
+            <div className="border-neo border-foreground shadow-neo-lg p-4 md:p-6 rounded mb-6 bg-slate-50">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
                 Blog
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">✍</span>
               </h1>
@@ -156,8 +156,8 @@ const SinglePage = () => {
         {/* Projects Section */}
         <section id="projects" className="mb-16 md:mb-24 scroll-mt-24">
           <div className="text-center mb-10 md:mb-16">
-            <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-6 bg-slate-50 inline-block">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center gap-3 md:gap-4 text-primary-foreground">
+            <div className="border-neo border-foreground shadow-neo-lg p-4 md:p-6 rounded mb-6 bg-slate-50">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
                 Projects
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
               </h1>
@@ -178,8 +178,8 @@ const SinglePage = () => {
         {/* Journey Section */}
         <section id="journey" className="scroll-mt-24">
           <div className="text-center mb-10 md:mb-16">
-            <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-6 bg-slate-50 inline-block">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center gap-3 md:gap-4 text-primary-foreground">
+            <div className="border-neo border-foreground shadow-neo-lg p-4 md:p-6 rounded mb-6 bg-slate-50">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
                 My Journey
                 <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">🚀</span>
               </h1>
