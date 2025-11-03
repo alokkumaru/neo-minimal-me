@@ -155,7 +155,7 @@ const SinglePage = () => {
         <section id="projects" className="mb-16 md:mb-24 scroll-mt-24">
           <div className="text-center mb-10 md:mb-16">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-6 flex items-center justify-center gap-3 md:gap-4">
-              My Work
+              Projects
               <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">👨‍💻</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto px-2">
