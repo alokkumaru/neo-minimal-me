@@ -116,3 +116,25 @@ All colors MUST be HSL.
     @apply font-bold;
   }
 }
+
+@layer components {
+  .background-grid-light {
+    position: absolute;
+    inset: 0;
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, #e4e4e7 1px, transparent 1px), 
+                      linear-gradient(to bottom, #e4e4e7 1px, transparent 1px);
+    z-index: 0;
+  }
+
+  .faint-mask-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  }
+}

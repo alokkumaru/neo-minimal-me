@@ -86,8 +86,10 @@ const SinglePage = () => {
         <Navigation />
         
         {/* Home Section */}
-        <section id="home" className="mb-16 md:mb-24 scroll-mt-24">
-          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50">
+        <section id="home" className="mb-16 md:mb-24 scroll-mt-24 relative">
+          <div className="absolute inset-0 background-grid-light"></div>
+          <div className="faint-mask-overlay"></div>
+          <div className="border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded mb-8 transform hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mx-[4px] bg-slate-50 relative z-10">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-6 text-primary-foreground">Hi, I'm Alok</h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-primary-foreground/90 font-medium mb-8 md:mb-8">I'm a consultant turned builder based in Bangalore. Always looking to solve hard, impactful problems.</p>
             <div className="flex flex-wrap gap-5 md:gap-6">
@@ -154,8 +156,10 @@ const SinglePage = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="mb-16 md:mb-24 scroll-mt-24">
-          <div className="text-center mb-6 md:mb-8">
+        <section id="projects" className="mb-16 md:mb-24 scroll-mt-24 relative">
+          <div className="absolute inset-0 background-grid-light"></div>
+          <div className="faint-mask-overlay"></div>
+          <div className="text-center mb-6 md:mb-8 relative z-10">
             <div className="border-neo border-foreground shadow-neo-lg p-4 md:p-6 rounded mb-6 bg-slate-50">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
                 Projects
@@ -167,7 +171,7 @@ const SinglePage = () => {
             </p>
           </div>
 
-          <div className="bg-card border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded text-center">
+          <div className="bg-card border-neo border-foreground shadow-neo-lg p-8 md:p-12 rounded text-center relative z-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Work In Progress</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
               Project showcase coming soon!
@@ -176,8 +180,10 @@ const SinglePage = () => {
         </section>
 
         {/* Journey Section */}
-        <section id="journey" className="scroll-mt-24">
-          <div className="text-center mb-6 md:mb-8">
+        <section id="journey" className="scroll-mt-24 relative">
+          <div className="absolute inset-0 background-grid-light"></div>
+          <div className="faint-mask-overlay"></div>
+          <div className="text-center mb-6 md:mb-8 relative z-10">
             <div className="border-neo border-foreground shadow-neo-lg p-4 md:p-6 rounded mb-6 bg-slate-50">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold flex items-center justify-center gap-3 md:gap-4 text-primary-foreground">
                 My Journey
@@ -190,7 +196,7 @@ const SinglePage = () => {
           </div>
 
           {/* Experience */}
-          <div className="mb-12 md:mb-16">
+          <div className="mb-12 md:mb-16 relative z-10">
             <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
               <Briefcase className="w-6 h-6 md:w-8 md:h-8" />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Experience</h2>
@@ -220,7 +226,7 @@ const SinglePage = () => {
           </div>
 
           {/* Education */}
-          <div className="mb-12 md:mb-16">
+          <div className="mb-12 md:mb-16 relative z-10">
             <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
               <GraduationCap className="w-6 h-6 md:w-8 md:h-8" />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Education</h2>
@@ -250,7 +256,7 @@ const SinglePage = () => {
           </div>
 
           {/* Activities and Interests */}
-          <div>
+          <div className="relative z-10">
             <div className="flex items-center gap-3 md:gap-4 mb-6 md:mb-8">
               <Award className="w-6 h-6 md:w-8 md:h-8" />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Activities and Interests</h2>
